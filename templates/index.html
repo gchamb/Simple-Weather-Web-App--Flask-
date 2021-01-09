@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h1>Giantte's Weather App</h1>
+<div class="label-text">
+    <label >Enter in your City</label>
+</div>
+<div class="my-form">
+    <form action="/weather" method="POST">
+        <input class="form-group" type="text" name="city" autocomplete="off">
+        <br>
+        <input class="button" type="submit" value="Submit"> 
+    </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block body%}
+<div class="my-img">
+    <img src={{icon}} alt="Weather icon" width="500" height="500">
+</div>
+<div class="my-weather">
+    <h2>The Temperature of {{city}} is {{temp}} degrees with {{clouds}} skies</h2>
+    <h3>Feels like {{feelsLike}} degrees</h3>
+</div>
+{% endblock %}
